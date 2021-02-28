@@ -3,6 +3,10 @@ export default {
     56: '0x52008784Dc2f6d7b591A490fEB8394625b8B0A5b',
     97: '',
   },
+  bear: {
+    56: '0x52008784Dc2f6d7b591A490fEB8394625b8B0A5b',
+    97: '',
+  },
   masterChef: {
     56: '0x154051CaEB6F623D78794885C6977E2BfEC908b3',
     97: '',
