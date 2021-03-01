@@ -25,11 +25,11 @@ const config: MenuEntry[] = [
     icon: 'FarmIcon',
     href: '/farms',
   },
-  // {
-  //   label: 'Wild Pools',
-  //   icon: 'PoolIcon',
-  //   href: '/pools',
-  // },
+  {
+    label: 'Wild Staking',
+    icon: 'PoolIcon',
+    href: '/pools',
+  },
   // {
   //   label: 'Casino (coming in 24h)',
   //   icon: 'PoolIcon',
@@ -40,16 +40,16 @@ const config: MenuEntry[] = [
   //   icon: 'PoolIcon',
   //   href: '/pools',
   // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
-  // {
-  //   label: 'NFT',
-  //   icon: 'NftIcon',
-  //   href: '/nft',
-  // },
+  {
+    label: 'Wild Lottery (in 24h)',
+    icon: 'TicketIcon',
+    href: '#', // /lotery
+  },
+  {
+    label: 'Bears NFT (in 24h)',
+    icon: 'NftIcon',
+    href: '#', // /nft
+  },
   {
     label: 'Info',
     icon: 'InfoIcon',
@@ -60,7 +60,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'GitHub',
-        href: 'https://github.com/TEDDY-finance',
+        href: 'https://github.com/PBEAR-finance',
       },
       // {
       //   label: 'CoinMarketCap',

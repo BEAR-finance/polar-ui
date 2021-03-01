@@ -2,8 +2,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract TeddyToken",
-        "name": "_teddy",
+        "internalType": "contract PbearToken",
+        "name": "_pbear",
         "type": "address"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_teddyPerBlock",
+        "name": "_pbearPerBlock",
         "type": "uint256"
       },
       {
@@ -154,10 +154,10 @@
   },
   {
     "inputs": [],
-    "name": "teddy",
+    "name": "pbear",
     "outputs": [
       {
-        "internalType": "contract TeddyToken",
+        "internalType": "contract PbearToken",
         "name": "",
         "type": "address"
       }
@@ -168,7 +168,7 @@
   },
   {
     "inputs": [],
-    "name": "teddyPerBlock",
+    "name": "pbearPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -235,7 +235,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accTeddyPerShare",
+        "name": "accPbearPerShare",
         "type": "uint256"
       },
       {
@@ -434,7 +434,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingTeddy",
+    "name": "pendingPbear",
     "outputs": [
       {
         "internalType": "uint256",
@@ -545,7 +545,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_teddyPerBlock",
+        "name": "_pbearPerBlock",
         "type": "uint256"
       }
     ],
