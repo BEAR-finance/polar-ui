@@ -5,11 +5,11 @@ import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPbearAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceCakeBusd } from '../../../state/hooks'
+import { useFarms, usePricePbearBusd } from '../../../state/hooks'
 
-const StyledCakeStats = styled(Card)`
+const StyledPbearStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
@@ -22,12 +22,12 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-const CakeStats = () => {
+const PbearStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
-  const burnedBalance = useBurnedBalance(getCakeAddress())
+  const burnedBalance = useBurnedBalance(getPbearAddress())
   const farms = useFarms()
-  const pbearPrice = usePriceCakeBusd()
+  const pbearPrice = usePricePbearBusd()
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
   const cakeSupply = getBalanceNumber(circSupply)
   const marketCap = pbearPrice.times(circSupply)
@@ -38,7 +38,7 @@ const CakeStats = () => {
   }
 
   return (
-    <StyledCakeStats>
+    <StyledPbearStats>
       <CardBody>
         <Heading size="xl" mb="24px">
           {TranslateString(534, 'Bear Stats')}
@@ -62,8 +62,8 @@ const CakeStats = () => {
           </Text>
         </Row>
       </CardBody>
-    </StyledCakeStats>
+    </StyledPbearStats>
   )
 }
 
-export default CakeStats
+export default PbearStats

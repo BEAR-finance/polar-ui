@@ -41,9 +41,9 @@ const config: MenuEntry[] = [
   //   href: '/pools',
   // },
   {
-    label: 'Wild Lottery (in 24h)',
+    label: 'Wild Lottery',
     icon: 'TicketIcon',
-    href: '#', // /lotery
+    href: '/lottery', // /lotery
   },
   {
     label: 'Bears NFT (in 24h)',

@@ -6,8 +6,8 @@ import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
-import CakeHarvestBalance from './CakeHarvestBalance'
-import CakeWalletBalance from './CakeWalletBalance'
+import PbearHarvestBalance from './PbearHarvestBalance'
+import PbearWalletBalance from './PbearWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/bear/2a.png');
@@ -61,11 +61,11 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/bear/2.png" alt="cake logo" width={64} height={64} />
         <Block>
-          <CakeHarvestBalance />
+          <PbearHarvestBalance />
           <Label>{TranslateString(544, 'PBEAR to Harvest')}</Label>
         </Block>
         <Block>
-          <CakeWalletBalance />
+          <PbearWalletBalance />
           <Label>{TranslateString(546, 'PBEAR in Wallet')}</Label>
         </Block>
         <Actions>

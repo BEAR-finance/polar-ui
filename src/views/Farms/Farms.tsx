@@ -5,10 +5,10 @@ import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
 import { Image, Heading } from '@pancakeswap-libs/uikit'
-import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
+import { BLOCKS_PER_YEAR, PBEAR_PER_BLOCK, PBEAR_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import { useFarms, usePriceBnbBusd, usePriceCakeBusd } from 'state/hooks'
+import { useFarms, usePriceBnbBusd, usePricePbearBusd } from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
 import { QuoteToken } from 'config/constants/types'
@@ -25,7 +25,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { path } = useRouteMatch()
   const TranslateString = useI18n()
   const farmsLP = useFarms()
-  const cakePrice = usePriceCakeBusd()
+  const cakePrice = usePricePbearBusd()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
@@ -46,7 +46,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   // to retrieve assets prices against USD
   const farmsList = useCallback(
     (farmsToDisplay, removed: boolean) => {
-      // const cakePriceVsBNB = new BigNumber(farmsLP.find((farm) => farm.pid === CAKE_POOL_PID)?.tokenPriceVsQuote || 0)
+      // const cakePriceVsBNB = new BigNumber(farmsLP.find((farm) => farm.pid === PBEAR_POOL_PID)?.tokenPriceVsQuote || 0)
       const farmsToDisplayWithAPY: FarmWithStakedValue[] = farmsToDisplay.map((farm) => {
         // if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
         //   return farm

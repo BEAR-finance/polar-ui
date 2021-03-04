@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Heading, Card, CardBody, Button, useModal } from '@pancakeswap-libs/uikit'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPbearAddress } from 'utils/addressHelpers'
 import { getBalanceNumber } from 'utils/formatBalance'
 import useI18n from 'hooks/useI18n'
 import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
@@ -9,7 +9,7 @@ import useTokenBalance from 'hooks/useTokenBalance'
 import { useMultiClaimLottery } from 'hooks/useBuyLottery'
 import { useTotalClaim } from 'hooks/useTickets'
 import BuyModal from 'views/Lottery/components/TicketCard/BuyTicketModal'
-import CakeWinnings from './CakeWinnings'
+import PbearWinnings from './PbearWinnings'
 import LotteryJackpot from './LotteryJackpot'
 
 const StyledLotteryCard = styled(Card)`
@@ -46,7 +46,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const { claimAmount } = useTotalClaim()
   const { onMultiClaim } = useMultiClaimLottery()
-  const cakeBalance = useTokenBalance(getCakeAddress())
+  const cakeBalance = useTokenBalance(getPbearAddress())
 
   const handleClaim = useCallback(async () => {
     try {
@@ -61,7 +61,7 @@ const FarmedStakingCard = () => {
     }
   }, [onMultiClaim, setRequestedClaim])
 
-  const [onPresentBuy] = useModal(<BuyModal max={cakeBalance} tokenName="CAKE" />)
+  const [onPresentBuy] = useModal(<BuyModal max={cakeBalance} tokenName="PBEAR" />)
 
   return (
     <StyledLotteryCard>
@@ -71,8 +71,8 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <CakeWinnings />
-          <Label>{TranslateString(552, 'CAKE to Collect')}</Label>
+          <PbearWinnings />
+          <Label>{TranslateString(552, 'PBEAR to Collect')}</Label>
         </Block>
         <Block>
           <LotteryJackpot />

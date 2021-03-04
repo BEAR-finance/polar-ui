@@ -155,7 +155,7 @@
   },
   {
     "inputs": [{ "internalType": "uint256", "name": "_amount", "type": "uint256" }],
-    "name": "withdrawCake",
+    "name": "withdrawPbear",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

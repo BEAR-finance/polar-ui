@@ -2,7 +2,7 @@ import addresses from 'config/constants/contracts'
 
 const chainId = process.env.REACT_APP_CHAIN_ID
 
-export const getCakeAddress = () => {
+export const getPbearAddress = () => {
   return addresses.cake[chainId]
 }
 export const getMasterChefAddress = () => {
