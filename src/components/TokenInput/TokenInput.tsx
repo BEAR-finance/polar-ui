@@ -17,6 +17,9 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
   return (
     <StyledTokenInput>
       <StyledMaxText>
+        By pressing &quot;Confirm&quot; you agree that bears.finance is not responsible in the lose of your funds.
+      </StyledMaxText>
+      <StyledMaxText>
         {max.toLocaleString()} {symbol} {TranslateString(526, 'Available')}
       </StyledMaxText>
       <Input

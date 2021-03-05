@@ -7,6 +7,14 @@ export default {
     56: '0x52008784Dc2f6d7b591A490fEB8394625b8B0A5b',
     97: '0xb3b10fa2668a940ee98fa79c312b430d86768c71',
   },
+  pbear: {
+    56: '0x0e43ded49fdfdbe58c182a20a67d61958541015e',
+    97: '0x0e43ded49fdfdbe58c182a20a67d61958541015e',
+  },
+  teddy: {
+    56: '0x52008784dc2f6d7b591a490feb8394625b8b0a5b',
+    97: '0x52008784dc2f6d7b591a490feb8394625b8b0a5b',
+  },
   masterChef: {
     56: '0xd9b38f9325266BC9Be59c602c55041c29b52a69A',
     97: '0xC4fe27D103603EDff955D81B25fade17461aD5DD',

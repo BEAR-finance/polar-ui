@@ -8,15 +8,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PBEAR-BEAR LP',
     lpAddresses: {
       97: '',
-      56: '0x95738a5523457a57f4e4bc971eb09b219a7b0cde',
+      56: '0x95738a5523457A57F4E4BC971eb09b219a7b0cDe',
     },
-    tokenSymbol: 'PBEAR',
+    tokenSymbol: 'BEAR',
     tokenAddresses: {
       97: '',
       56: '0x0e43ded49fdfdbe58c182a20a67d61958541015e',
     },
-    quoteTokenSymbol: QuoteToken.BEAR,
-    quoteTokenAdresses: contracts.bear,
+    quoteTokenSymbol: QuoteToken.PBEAR,
+    quoteTokenAdresses: contracts.pbear,
   },
   {
     pid: 1,
@@ -296,23 +296,73 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // {
-  //   pid: 17,
-  //   risk: 1,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'DAI',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x3ab77e40340ab084c3e23be8e5a6f7afed9d41dc', // DAI-BUSD LP
-  //   },
-  //   tokenSymbol: 'DAI',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+  {
+    pid: 12,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'PBEAR',
+    lpAddresses: {
+      97: '',
+      56: '0xb4de6372407246be0033acd3be6ce8da0474638c', // DAI-BUSD LP
+    },
+    tokenSymbol: 'PBEAR',
+    tokenAddresses: {
+      97: '',
+      56: '0x0e43ded49fdfdbe58c182a20a67d61958541015e',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 13,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'TEDDY',
+    lpAddresses: {
+      97: '',
+      56: '0x21224740343296f3a107a183b3353e7968499a7a', // DAI-BUSD LP
+    },
+    tokenSymbol: 'TEDDY',
+    tokenAddresses: {
+      97: '',
+      56: '0x52008784dc2f6d7b591a490feb8394625b8b0a5b',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 14,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'BEAR',
+    lpAddresses: {
+      97: '',
+      56: '0x4e4820e5A4e7E7b8f54Df4B23Fd6a89b57dDf0Bb', // DAI-BUSD LP
+    },
+    tokenSymbol: 'BEAR',
+    tokenAddresses: {
+      97: '',
+      56: '0x580f500cc7da45b7b058de7df325f6d8f83065e1',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 15,
+    risk: 5,
+    lpSymbol: 'PBEAR-TEDDY LP',
+    lpAddresses: {
+      97: '',
+      56: '0x98662d06a06472efad8d4c73ebb5ec49b06235ff',
+    },
+    tokenSymbol: 'TEDDY',
+    tokenAddresses: {
+      97: '',
+      56: '0x52008784dc2f6d7b591a490feb8394625b8b0a5b',
+    },
+    quoteTokenSymbol: QuoteToken.PBEAR,
+    quoteTokenAdresses: contracts.pbear,
+  },
   // {
   //   pid: 19,
   //   risk: 1,

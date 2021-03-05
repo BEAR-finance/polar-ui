@@ -20,6 +20,7 @@ export interface Ifo {
 }
 
 export enum QuoteToken {
+  'TEDDY' = 'TEDDY',
   'BEAR' = 'BEAR',
   'BNB' = 'BNB',
   'PBEAR' = 'PBEAR',
